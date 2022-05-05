@@ -2,11 +2,11 @@
    //    display: flex;
    position: absolute;
    top: 4rem;
-   right: -250px;
+   left: -250px;
    background-color: gray;
    margin: 0;
    padding: 1rem;
-   height: calc(100vh - 4rem);
+   height: 80vh;
    text-align: left;
    transition: all 0.5s;
    &__item {
@@ -42,5 +42,5 @@
    }
 }
 .show {
-   right: 0;
+   left: 0;
 }

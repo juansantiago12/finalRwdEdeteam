@@ -47,11 +47,11 @@ li {
 .main-menu {
   position: absolute;
   top: 4rem;
-  right: -250px;
+  left: -250px;
   background-color: gray;
   margin: 0;
   padding: 1rem;
-  height: calc(100vh - 4rem);
+  height: 80vh;
   text-align: left;
   transition: all 0.5s;
 }
@@ -94,7 +94,7 @@ li {
 }
 
 .show {
-  right: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
