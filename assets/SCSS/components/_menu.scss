@@ -1,16 +1,15 @@
 .main-menu {
-   //    display: flex;
-   position: absolute;
-   top: 4rem;
-   left: -250px;
-   background-color: gray;
+   position: fixed;
+   top: $header-height;
+   background-color: $dark-color;
    margin: 0;
    padding: 1rem;
-   height: 80vh;
-   text-align: left;
+   width: 80vw;
+   height: calc(100vh - #{$header-height});
+   right: -80vw;
    transition: all 0.5s;
    &__item {
-      margin: 10px 0;
+      padding: 1rem;
    }
    &__link {
       color: white;
@@ -19,7 +18,7 @@
          color: $text-color;
       }
    }
-   &__icon {
+   &__toggle {
       font-size: 20px;
       cursor: pointer;
       border-radius: 5px;
@@ -34,7 +33,7 @@
    @media screen and (min-width: 600px) {
       position: static;
       display: flex;
-      background-color: none;
+      width: 100%;
       height: auto;
       background-color: transparent;
       transition: none;
@@ -42,5 +41,5 @@
    }
 }
 .show {
-   left: 0;
+   right: 0;
 }
