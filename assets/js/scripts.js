@@ -1,7 +1,13 @@
-const menu = document.getElementById('main-menu');
-const btn = document.getElementById('main-menu__toggle');
+const showMenu = (toggleId, menuId) => {
+   const menu = document.getElementById(menuId);
+   const toggle = document.getElementById(toggleId);
 
-btn.addEventListener('click', () => {
-   console.log('click');
-   menu.classList.toggle('show');
-});
+   if (menu && toggle) {
+      toggle.addEventListener('click', () => {
+         console.log('click');
+         menu.classList.toggle('show');
+      });
+   }
+};
+
+showMenu('main-menu__toggle', 'main-menu');

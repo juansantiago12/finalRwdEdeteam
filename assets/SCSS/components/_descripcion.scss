@@ -1,0 +1,14 @@
+.main-descripcion {
+   --padding: 0.8rem 0;
+   text-align: center;
+   color: $text-color;
+   line-height: 1.5;
+   width: 70%;
+   padding: var(--padding);
+   @include from(s) {
+      --padding: 2rem 0;
+   }
+   @include from(l) {
+      --padding: 3rem 0;
+   }
+}
